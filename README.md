@@ -1,27 +1,30 @@
 # 📝 Todo List CLI
 
-A simple **command-line task manager** built with Python.  
-You can add, view, and remove tasks stored in a text file.  
+A simple **command-line task manager** built with Python, using **SQLAlchemy** with **SQLite**  
+You can add, view, and remove tasks stored in a database.  
 
 ## 🚀 Features
 - Add tasks
 - View all tasks
 - Remove tasks
-- Persistent storage using `.txt` file
+- Persistent storage using SQLite database
 - Colorful terminal output
 
 ## 🛠️ Technologies
 - Python 3.10.12
 - Standard Library (no external dependencies)
+- SQLite (Database)
+- SQLAlchemy (ORM)
 
 ## 📂 Project Structure
 
-src/
-│── main.py # Main program
-│── utils/
-│ ├── file_handler.py # File operations
-│ ├── functions.py # Utility functions (menu, formatting, etc.)
-│ └── colors.py # Terminal colors and text formatting
+todo-list/  
+│── main.py  
+│── database.py  
+│── utils/  
+│ ├── functions.py  
+│ └── colors.py  
+│── README.md  
 
 ## ▶️ How to Run
 
