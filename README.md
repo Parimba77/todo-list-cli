@@ -32,7 +32,7 @@ todo-list/
 git clone https://github.com/Parimba77/todo-list-cli.git
 
 # Navigate to the project folder
-cd todo-list-cli/src
+cd todo-list-cli/
 
 # Run the program
 python main.py
