@@ -34,5 +34,11 @@ git clone https://github.com/Parimba77/todo-list-cli.git
 # Navigate to the project folder
 cd todo-list-cli/
 
+# Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 # Run the program
 python main.py
