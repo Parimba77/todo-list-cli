@@ -3,10 +3,27 @@
 __pycache__/
 *.pyc
 *.pyo
+*.__pycache__
+*.pyd
+
 
 # Virtual env
 venv/
 .env/
+*.venv/
+env/
+*.env/
+ENV/
+*.ENV/
+*.venv
+.venv/
+env.bak/
+venv.bak/
+# Spyder project settings
+.spyderproject
+.spyproject
+
+
 
 # SQLite database
 *.db
