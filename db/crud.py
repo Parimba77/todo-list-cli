@@ -1,29 +1,5 @@
-from sqlalchemy import create_engine, String, Integer, Column
-from sqlalchemy.orm import declarative_base, sessionmaker
-
-# Creating Database Connection
-db = create_engine('sqlite:///todo-list.db', echo=False)  
-Base = declarative_base()
-Session = sessionmaker(bind=db)
-session = Session()
-
-# Task Model
-class Task(Base):
-    __tablename__ = 'tasks'
-    
-    id = Column(Integer, primary_key=True)
-    title = Column(String, nullable=False)
-    description = Column(String, nullable=True)
-    
-    def __init__(self, title, description=None):
-        self.title = title
-        self.description = description
-        
-    def __repr__(self):
-        return f"<Task(id={self.id}, title='{self.title}', description='{self.description}')>"
-
-# Creating Tables
-Base.metadata.create_all(db)
+from db.models import Task
+from db.database import session
 
 # CRUD
 def add_task(title, description=None):

@@ -1,6 +1,6 @@
 from utils.functions import *
 from utils.colors import *
-from database import *
+from db.crud import *
 from time import sleep
 
 if __name__ == "__main__":
