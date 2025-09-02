@@ -18,12 +18,18 @@ You can add, view, and remove tasks stored in a database.
 
 ## 📂 Project Structure
 
-todo-list/  
+todo-list-cli/  
 │── main.py  
 │── database.py  
 │── utils/  
+│ ├── __init__.py  
 │ ├── functions.py  
 │ └── colors.py  
+├── db/  
+│   ├── __init__.py  
+│   └── crud.py  
+│   └── database.py  
+│   └── models.py  
 │── README.md  
 
 ## ▶️ How to Run
