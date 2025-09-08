@@ -1,15 +1,26 @@
 # Utility functions for formatting and menu 
+from time import sleep
+from utils.colors import *
 
 def line(msg): 
     print("-" * 30) 
     print(msg.center(30)) 
     print("-" * 30) 
     
-def big_line(msg): 
-        print("-" * 50) 
-        print(msg.center(30)) 
-        print("-" * 50) 
+def KeyboardInterrupt_handler(): 
+    print() 
+    red() 
+    print("Operation cancelled by user.") 
+    reset_format() 
+    sleep(0.5) 
     
+    
+def Exception_handler(e): 
+    red() 
+    print(f"An error occurred: {e}") 
+    reset_format() 
+    sleep(0.5)
+
 def menu(): 
     print("\033[34mChoose one of the options below:") 
     print() 
